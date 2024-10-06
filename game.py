@@ -197,7 +197,7 @@ def gamePlayer_loop_2( numbers, screen ):
     
     
     grid_game1 = Grid(GRID_SIZE,CELL_SIZE,15,15)
-    grid_game2 = Grid(GRID_SIZE,CELL_SIZE,900,80)
+    grid_game2 = Grid(GRID_SIZE,CELL_SIZE,900,15)
     
     
     # button_restart = Button( (SCREEN_WIDTH / 2) -300 , (SCREEN_HEIGHT / 3)+400 , 200, 80, "Get new suffle" )
