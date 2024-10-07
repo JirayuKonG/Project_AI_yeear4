@@ -41,7 +41,7 @@ def ida_star_search(start_state, goal_state):
         min_threshold = float('inf')
         empty_index = node.index(0)
         empty_row, empty_col = empty_index // main.GRID_SIZE, empty_index % main.GRID_SIZE
-        possible_moves = []
+        possible_moves = []  # create list 
         if empty_row > 0:
             possible_moves.append((empty_row - 1, empty_col))  # Move Up
         if empty_row < main.GRID_SIZE - 1:
@@ -64,8 +64,8 @@ def ida_star_search(start_state, goal_state):
                 path.pop()
         return min_threshold
 
-    threshold = manhattan_distance(start_state, goal_state)
-    path = [start_state]
+    threshold = manhattan_distance(start_state, goal_state)   # find distance between node
+    path = [start_state] # create a list 
     while True:
         t = dfs(path, 0, threshold)
         if t == 'FOUND':
